@@ -483,6 +483,10 @@ header .btn {
         padding: 1.2rem 0;
     }
 
+    #home .text h2 {
+        font-size: var(--font-lg);
+    }
+
     #home .text p {
         padding: 1.2rem 0;
     }
