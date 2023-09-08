@@ -95,7 +95,7 @@ header .btn {
     display: grid;
     gap: 40px;
     grid-template-columns: 1fr 1fr;
-    height: 100dvh;
+    height: 100svh;
     overflow: hidden;
     padding: 0 5%;
     width: 100%;
