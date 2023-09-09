@@ -12,6 +12,7 @@ closeMenu.addEventListener("click", function () {
 // typing efffect
 
 const dynmTxt = document.querySelector('#cnt #dynm');
+const dynamicTxt = document.querySelector('.static-text .dynamic-txt');
 
 const words = ["Web Developer", "Web Designer", "Graphic Designer"];
 
@@ -23,6 +24,7 @@ const typeEffect = () => {
     const currentWord = words[wordIndex];
     const currentChar = currentWord.substring(0, charIndex);
     dynmTxt.textContent = currentChar;
+    dynamicTxt.textContent = currentChar;
 
     if (!isDeleting && charIndex < currentWord.length) {
         charIndex++;
@@ -39,32 +41,58 @@ const typeEffect = () => {
 
 typeEffect();
 
-// 2nd typewriter effect
+// close nav-ber when a link is clicked
 
-const dynamicTxt = document.querySelector('.static-text .dynamic-txt');
-const word = ["Web Developer", "Web Designer", "Graphic Designer"];
-
-let wordIndex1 = 0;
-let charIndex1 = 0;
-let isDeleting1 = false;
-
-
-const typeWriter = () => {
-    const currentWord = words[wordIndex1];
-    const currentChar = currentWord.substring(0, charIndex1);
-    dynamicTxt.textContent = currentChar;
-
-    if (!isDeleting1 && charIndex1 < currentWord.length) {
-        charIndex1++;
-        setTimeout(typeWriter, 200);
-    } else if (isDeleting1 && charIndex1 > 0) {
-        charIndex1--;
-        setTimeout(typeWriter, 100);
-    } else {
-        isDeleting1 = !isDeleting1;
-        wordIndex1 = !isDeleting1 ? (wordIndex1 + 1) % words.length : wordIndex1;
-        setTimeout(typeWriter, 1200);
+document.querySelector(".nav-bar").addEventListener("click", (e) => {
+    if (e.target.classList.contains("link")) {
+        navBar.classList.remove("active");
     }
-}
+})
 
-typeWriter();
+// form validation
+
+document.querySelector("form").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // variables
+
+    let name = document.querySelector("#name").value;
+    let email = document.querySelector("#email").value;
+    let subject = document.querySelector("#subject").value;
+    let message = document.querySelector("#message").value;
+
+    if (name === "" || email === "" || subject === "" || message === "") {
+        console.log("helloworld");
+        const errorMessage = document.querySelector(".error");
+        errorMessage.style.display = "block";
+        errorMessage.firstElementChild.classList.add("fa-xmark")
+        errorMessage.lastElementChild.textContent = "Please make sure all input fields are filled";
+        setTimeout(() => {
+            document.querySelector(".error").style.display = "none";
+        }, 3000)
+    } else {
+
+        const successMessage = document.querySelector(".success");
+        successMessage.style.display = "block";
+        successMessage.firstElementChild.classList.add("fa-check")
+        successMessage.lastElementChild.textContent = "Your Message is on it's way to Temidayo";
+        setTimeout(() => {
+            document.querySelector(".success").style.display = "none";
+        }, 3000)
+
+
+        document.querySelector("#name").value = "";
+        document.querySelector("#email").value = "";
+        document.querySelector("#subject").value = "";
+        document.querySelector("#message").value = "";
+
+        
+
+        console.log("hello-world")
+
+    }
+
+
+})
+
+//
