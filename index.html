@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/d5c2afb46b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,11 +17,11 @@
             <div class="btn">
                 <i class="fa-solid fa-xmark close-bar"></i>
             </div>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#service">Service</a>
-            <a href="#skill">Skill</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="link">Home</a>
+            <a href="#about" class="link">About</a>
+            <a href="#service" class="link">Service</a>
+            <a href="#skill" class="link">Skill</a>
+            <a href="#contact" class="link">Contact</a>
         </nav>
         <div class="btn">
             <i class="fa-solid fa-bars menu-bar"></i>
@@ -146,11 +143,85 @@
                     <p>I possess a 70% mastery in JavaScript, enabling me to create dynamic and interactive web
                         experiences. With this skill, I
                         can bring your web projects to life by adding functionality and interactivity that engages
-                        users..</p>
+                        users.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="contact">
+        <div class="heading">
+            <h2>Contact Me</h2>
+            <h3>Get in Touch</h3>
+        </div>
+        <div class="contact-info">
+            <div class="info">
+                <h3>Connect With Me</h3>
+                <div class="detail first">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="txt">
+                        <h4>Name</h4>
+                        <p>Owoigbe Temidayo</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="txt">
+                        <h4>Location</h4>
+                        <p>Ifo LG, Ogun State Nigeria</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="txt">
+                        <h4>Email</h4>
+                        <p>owoigbetemidayo@gmail.com</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="txt">
+                        <h4>Phone</h4>
+                        <p>+234 806 487 3846</p>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <h3>Send a Message</h3>
+                <div class="msg success">
+                    <i class="fa-solid"></i>
+                    <span></span>
+                </div>
+                <div class="msg error">
+                    <i class="fa-solid"></i>
+                    <span></span>
+                </div>
+                <div class="form-container">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <textarea name="message" id="message" rows="3" placeholder="Message"></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <button class="to-top">
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </button>
+
+    <footer>
+        <h4>Created By Owoigbe Temidayo | &copy; 2023 All rights reserved</h4>
+    </footer>
 
     <script src="/main.js"></script>
 
