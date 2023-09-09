@@ -604,8 +604,8 @@ footer h4 {
         --padding: 3rem 4%;
 
         /* font */
-        --font-xxl: 2.3rem;
-        --font-xl: 2.1rem;
+        --font-xxl: 2.2rem;
+        --font-xl: 2rem;
         --font-lg: 1.8rem;
         --font-600: 1.6rem;
         --font-500: 1.2rem;
@@ -685,6 +685,10 @@ footer h4 {
         right: -100vw;
         top: 0;
         transition: 1s;
+    }
+
+    header.sticky {
+        padding: .6rem 5%;
     }
 
     header.sticky .nav-bar {
