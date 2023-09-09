@@ -118,7 +118,7 @@ header .btn {
     color: var(--blue);
     font-size: var(--font-xxl);
     font-weight: 700;
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
 #home .text .anim {
@@ -737,6 +737,10 @@ footer h4 {
         cursor: pointer;
         display: block;
         font-size: var(--font-xxl);
+    }
+
+    #home .text h1 {
+        padding: 0;
     }
 
     #about .info .txt .dextop {
