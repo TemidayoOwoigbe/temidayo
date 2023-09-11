@@ -15,7 +15,10 @@
         <a href="#home" class="title">Temidayo.</a>
         <nav class="nav-bar">
             <div class="btn">
-                <i class="fa-solid fa-xmark close-bar"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6 close-bar">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
             </div>
             <a href="#home" class="link">Home</a>
             <a href="#about" class="link">About</a>
@@ -24,7 +27,11 @@
             <a href="#contact" class="link">Contact</a>
         </nav>
         <div class="btn">
-            <i class="fa-solid fa-bars menu-bar"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                class="w-6 h-6 menu-bar">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
         </div>
     </header>
 
@@ -66,8 +73,8 @@
                     you're looking for an engaging user interface, or a custom web application, I'm here to turn your
                     vision into reality.
                     Beyond coding, I value effective communication and collaboration. Let's connect and explore how we
-                    can work together to
-                    make your digital dreams come true. Explore my portfolio to see my work in action and reach out to
+                    can work together to make your digital dreams come true. Explore my portfolio to see my work in
+                    action and reach out to
                     discuss your web
                     projects in more detail.</p>
                 <p class="mobile">Hello, I'm Temidayo, a passionate web developer specializing in HTML, CSS, and
@@ -140,7 +147,7 @@
                 </div>
                 <div class="text">
                     <h4>JavaScript</h4>
-                    <p>I possess a 70% mastery in JavaScript, enabling me to create dynamic and interactive web
+                    <p>I possess a 65% mastery in JavaScript, enabling me to create dynamic and interactive web
                         experiences. With this skill, I
                         can bring your web projects to life by adding functionality and interactivity that engages
                         users.</p>
@@ -194,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <form>
+            <form action="https://formsubmit.co/owoigbetemidayo@gmail.com" method="POST">
                 <h3>Send a Message</h3>
                 <div class="msg success">
                     <i class="fa-solid"></i>
@@ -215,7 +222,7 @@
         </div>
     </section>
 
-    <button class="to-top">
+    <button class="to-top" id="#home">
         <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
     </button>
 
@@ -230,6 +237,12 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         });
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('YXC0z39cKSaQE0xuh')
     </script>
 
 </body>
