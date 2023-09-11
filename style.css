@@ -500,7 +500,7 @@ header .btn {
 }
 
 #contact .contact-info form {
-    padding: 0 1.875rem;
+    padding-left: 3.75rem;
     flex: 1;
     width: 100%;
 }
@@ -650,6 +650,14 @@ footer h4 {
         margin-top: 2rem;
     }
 
+    #service .container .serv:hover p {
+        color: var(--black);
+    }
+
+    #service .container .serv:hover {
+        background-color: #efefef;
+    }
+
     #skill .skl-cnt {
         gap: 3rem;
         grid-template-columns: 1fr;
@@ -666,6 +674,10 @@ footer h4 {
     #contact .contact-info form .form-container {
         flex-direction: column;
         gap: 0;
+    }
+
+    #contact .contact-info form {
+        padding: 0;
     }
 }
 
@@ -706,7 +718,7 @@ footer h4 {
         margin: 1.48rem;
         position: absolute;
         top: 0;
-
+        width: 3rem;
     }
 
     header .nav-bar a {
@@ -727,6 +739,7 @@ footer h4 {
 
     header .btn .menu-bar {
         color: var(--blue);
+
     }
 
     header.sticky .btn .menu-bar {
@@ -736,7 +749,7 @@ footer h4 {
     header .btn {
         cursor: pointer;
         display: block;
-        font-size: var(--font-xxl);
+        width: 3rem;
     }
 
     #home .text h1 {
@@ -772,8 +785,20 @@ footer h4 {
         padding: 1.2rem 0;
     }
 
+    #home .text a:hover {
+        color: #fff;
+        background-color: var(--blue);
+        border: 2px solid var(--blue);
+    }
+
     #service .container .serv p {
         font-size: var(--font-500);
+    }
+
+    .container .serv img {
+        flex: 1;
+        opacity: 1;
+        width: 100%;
     }
 
     #skill .skl-cnt {
@@ -784,6 +809,10 @@ footer h4 {
     #contact .contact-info form .error-message span {
         color: #fff;
         font-size: var(--font-400);
+    }
+
+    .to-top:hover {
+        background-color: var(--red);
     }
 }
 
