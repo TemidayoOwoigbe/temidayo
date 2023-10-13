@@ -38,7 +38,7 @@ header {
     justify-content: space-between;
     padding: 1.5rem 5%;
     position: fixed;
-    transition: 0.3s;
+    transition: 0.8s;
     width: 100%;
     z-index: 100;
 }
